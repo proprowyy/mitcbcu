@@ -420,11 +420,9 @@ int main(int argc, char **argv)
 	/*Initialize the semaphore*/
 	InitSemaphore(&sem_wakeup_bcu_mic_sample);
 	InitSemaphore(&sem_demao);
-
-
 	/*init the info which is send by bcu to ccu*/
 	InitBCULogInfo(&bcu_send_log_info_to_ccu);
-
+	diag_printf("test------>\n");
 	/*initialize the share variable,which is used to identify the audio data's destination*/
 	InitAudioDataDestination();
 
