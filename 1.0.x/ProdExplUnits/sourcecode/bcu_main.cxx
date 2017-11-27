@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2012，MIT
  * All right reserved.
  *
@@ -49,7 +49,6 @@ void RestartAUTOSIMTimer()
 {
 	cyg_alarm_initialize(alarm_handle_sim_auto,cyg_current_time()+5000,5000);
 	cyg_alarm_enable(alarm_handle_sim_auto);
-//	diag_printf("RestartAUTOSIMTimer\n");
 }
 
 void SendAtoTestLineSet(send_infomation_t *line_set_send_package)
