@@ -656,11 +656,16 @@ void NetWorkMain(network_buffer_t network_buffer)
 					net_debug_printf(("BCU,net cmd:  tar_ip is : %s\n",tar_dev_info.dev_ip));
 //					diag_printf("BCU,net cmd:  tar_ip is : %s\n",tar_dev_info.dev_ip);
 					last_network_flag = network_flag;network_flag = 60;
-					UdpSendFunCMD(udp_cmd_socket,&network_send_cmd_buf,sizeof(network_send_package_t),tar_dev_info.dev_ip,UDP_CMD_PORT);//发送控制数据
+
 					if(network_send_cmd_buf.send_information.event_type_intercom==7)
 					{
 						UdpSendFunCMD(udp_cmd_socket,&network_send_cmd_buf,sizeof(network_send_package_t),"192.168.10.200",UDP_CMD_PORT);//发送控制数据
 					}
+					else
+					{
+						UdpSendFunCMD(udp_cmd_socket,&network_send_cmd_buf,sizeof(network_send_package_t),tar_dev_info.dev_ip,UDP_CMD_PORT);//发送控制数据
+					}
+
 					last_network_flag = network_flag;network_flag = 61;
 				}
 				last_network_flag = network_flag;network_flag = 62;

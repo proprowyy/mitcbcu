@@ -153,11 +153,6 @@ int BcuPlayAudio(cyg_io_handle_t audio_handle, int audio_source_buffer_id)
 //	len = strlen(temp_buffer);
 	len = current_total_bytes;
 	debug_print(("before: current_total_bytes=%d, len=%d\n", current_total_bytes, len));
-//	if(len < 128)
-//	{
-//		return 0;
-//	}
-
 	len_backup = len;
 	snd_set_local = (1<<8) | CYG_SND_AUDIO_STREAM ;
 	ret_bwrite = cyg_io_bwrite( audio_handle, (void *)temp_buffer, (cyg_uint32  *)&len, snd_set_local);
@@ -1009,7 +1004,9 @@ void PutMicSampleDataintoBuffer_BCU(cyg_io_handle_t audio_handle, int buffer_id)
 	cyg_uint32 snd_set ;
 	Cyg_ErrNo stat_rw;
 	audio_tx = audio_rx ;
-
+	int button_state = 0;
+	button_state = GetPTTState();
+	diag_printf("button_state_Ptt=%d\n",button_state);
 	snd_set = (1<<8) | CYG_SND_AUDIO_STREAM;
 	last_sample_flag = sample_flag;sample_flag = 187;
 	stat_rw = cyg_io_bread(audio_handle ,(void *)audio_tx, &len, snd_set);
@@ -1020,6 +1017,7 @@ void PutMicSampleDataintoBuffer_BCU(cyg_io_handle_t audio_handle, int buffer_id)
 	}
 	audio_tx = audio_rx ;
 	last_sample_flag = sample_flag;sample_flag = 189;
+	if(button_state == 1)
 	 wr_ret = CharBufferWrite(buffer_id, audio_tx, len);
 	 sd_debug_print(("wr_ret = %d\n",wr_ret));
 //	 CharBufferWrite(bcu_state.audio_data_recv_buffer_id, audio_tx, len);

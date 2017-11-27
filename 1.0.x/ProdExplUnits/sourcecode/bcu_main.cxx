@@ -377,7 +377,7 @@ int main(int argc, char **argv)
 	strncpy(bcu_state.pa_software_version.software_date,"2017-11-15",30);
 	strncpy(bcu_state.pa_software_version.db_version_audio,"NULL",30);
 	strncpy(bcu_state.pa_software_version.db_version_config,"NULL",30);
-    diag_printf("compile*************>%d\n",__DATE__);
+    diag_printf("compile--->%d\n",__DATE__);
 	diag_printf("Just for test\n");
 	diag_printf("%s\n",bcu_state.pa_software_version.software_version);
 	diag_printf("%s\n",bcu_state.pa_software_version.software_date);
