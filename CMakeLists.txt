@@ -1,4 +1,4 @@
-# CMake input file to build BasicLib2
+## CMake input file to build BasicLib2
  if(COMMAND cmake_policy)
      cmake_minimum_required(VERSION 2.8)
      cmake_policy(SET CMP0003 NEW)
