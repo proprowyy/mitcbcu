@@ -1,0 +1,28 @@
+# CMake input file to build ProdExplLib
+#include ecos library
+#INCLUDE_DIRECTORIES( ${ECOS_INCLUDE}/include )
+#INCLUDE_DIRECTORIES( ${BASICLIB_INCLUDE}/LibUtilities/include )
+#INCLUDE_DIRECTORIES( ${BASICLIB_INCLUDE}/LibModules/include )
+#INCLUDE_DIRECTORIES( ${BASICLIB_INCLUDE}/LibData/include )
+#INCLUDE_DIRECTORIES( ${PROD_EXPL_SOURCE_DIR}/ProdExplDrivers/include)
+#INCLUDE_DIRECTORIES( ${PROD_EXPL_SOURCE_DIR}/ProdExplLib/include)
+
+# Make sure the linker can find the libraries once they are built.
+#LINK_DIRECTORIES(${CMAKE_INSTALL_PREFIX}/lib)
+#LINK_DIRECTORIES(${BASICLIB_LIBRARY}/LibUtilities)
+#LINK_DIRECTORIES(${BASICLIB_LIBRARY}/LibModules)
+LINK_DIRECTORIES(${ECOS_LIBRARY}/include)
+LINK_DIRECTORIES(${ECOS_LIBRARY}/lib)
+
+SET(PROD_EXPL_LIBDRIVERS_SRCS
+)
+
+
+# Strip release build
+IF( "${CMAKE_BUILD_TYPE}" STREQUAL "Release" )
+  SET( CMAKE_EXE_LINKER_FLAGS  "-Wl,-strip-all")
+ENDIF( "${CMAKE_BUILD_TYPE}" STREQUAL "Release" )
+
+#ADD_LIBRARY( ProdExplLib STATIC ${PROD_EXPL_LIB_SRCS})
+
+#INSTALL( TARGETS ProdExplLib DESTINATION lib )
