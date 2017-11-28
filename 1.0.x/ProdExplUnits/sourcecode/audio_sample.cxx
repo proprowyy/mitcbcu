@@ -106,7 +106,7 @@ int CloseAudioSampleTimer()
 /*Start the audio sample timer*/
 void StartAudioSampleTimer()
 {
-	diag_printf("StartAudioSampleTimer\n");
+
 	///<设置音频采集定时器采样周期
 	if(bcu_state.bcu_active_intercom_state->state_id == D2P_INTERCOMM_EVENT)
 	{
@@ -114,9 +114,10 @@ void StartAudioSampleTimer()
 	}
 	else
 	{
+		diag_printf("StartAudioSampleTimer-10\n");
 		SetAudioSampleTimeInterval(10);
-	}
 
+	}
 	OpenAudioSampleTimer();
 	whether_open_sample_timer = 1;
 }
