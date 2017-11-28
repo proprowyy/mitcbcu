@@ -1296,9 +1296,13 @@ void JudegWhetherRequestD2D()
 		last_control_flag = control_flag;control_flag = 218;
 		UpdataGlobalDeviceInfo(D2D_request_cmd_package);/*Update global device information*/
 		bcu_state.this_bcu_request = 1;
+
 		send_infomation_t *tmp=&D2D_request_cmd_package;
 		SendCmd(&tmp,"BCU",2);
 		//StateMachineExchange(&bcu_state.bcu_active_intercom_state,EVENT_PTT_OR_DRIVER_CALL,&D2D_request_cmd_package);
+		last_control_flag = control_flag;control_flag = 219;
+		/*idle->d2d*/
+	//	StateMachineExchange(&bcu_state.bcu_active_intercom_state,EVENT_PTT_OR_DRIVER_CALL,&D2D_request_cmd_package);
 		last_control_flag = control_flag;control_flag = 220;
 	}
 	last_control_flag = control_flag;control_flag = 221;

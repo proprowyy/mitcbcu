@@ -114,9 +114,13 @@ void StartAudioSampleTimer()
 	}
 	else
 	{
+
 		diag_printf("StartAudioSampleTimer-10\n");
 		SetAudioSampleTimeInterval(10);
 
+	}
+	{
+		SetAudioSampleTimeInterval(SAMPLE_AUDIO_FREQUENCE);
 	}
 	OpenAudioSampleTimer();
 	whether_open_sample_timer = 1;
