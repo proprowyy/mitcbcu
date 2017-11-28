@@ -204,8 +204,8 @@ void IdleIntercomProcess(send_infomation_t *send_information_intercomm_idle)
 void D2DIntercomEnter(send_infomation_t *send_information_intercomm_d2d)
 {
 	bcu_6d5w_ctrl_wilson(bcu_state.device_volume.d2d_volume);
-
 	debug_print(("I am d2d intercom enter\n"));
+	bcu_state.bcu_requset_ocs_connecting=0;
 	//bcu_audio_in_ctrl(0);
 	///<设置当前CC按键状态
 	bcu_state.d2d_button_state = 1;
@@ -690,18 +690,9 @@ void AdjustVolumeAfterCODEC()
 
 void D2DReqAndResponseHandle()
 {
+		JudgeWhetherD2DHaveFinished();/*Judge whether have finish d2d*/
+		JudegWhetherRequestD2D();/*Judge whether want to enter D2D state*/
 
-	if(1)
-	{
-
-		{
-			JudgeWhetherD2DHaveFinished();/*Judge whether have finish d2d*/
-		}
-
-		{
-			JudegWhetherRequestD2D();/*Judge whether want to enter D2D state*/
-		}
-	}
 }
 
 void KeepComminicationWithPCU()

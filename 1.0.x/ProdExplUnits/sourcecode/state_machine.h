@@ -191,7 +191,7 @@ typedef struct
 	int all_dev_state_buffer_id;
 	g_dev_fault_info_t dev_falut_info;
 	g_dev_fault_info_t dev_falut_last_info;
-	//unsigned char this_bcu_connect_two_cars_state;
+
 	int local_audio_data_recv_buffer_id;
 	int software_version_buffer_id;
 	pa_software_version_t pa_software_version;
@@ -203,6 +203,7 @@ typedef struct
 	unsigned char ts_current_state;
 	unsigned char pcu_request_info_without_ts[12];
 	unsigned char pcu_is_connecting_without_ts;
+	unsigned char bcu_requset_ocs_connecting;
 }bcu_state_t;
 
 #endif /* STATE_MACHINE_H_ */

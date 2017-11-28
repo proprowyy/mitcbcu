@@ -1276,36 +1276,24 @@ void JudegWhetherRequestD2D()
 			GetD2PExternButtonState() == 1 && bcu_state.mic_owner == NONE && bcu_state.d2d_button_state == 0)
 	{
 		debug_print(("I want to enter D2D state\n"));
-
-		last_control_flag = control_flag;control_flag = 217;
-
 		send_infomation_t D2D_request_cmd_package;
-
 		strcpy(D2D_request_cmd_package.src_devices_name,"BCU");
 		D2D_request_cmd_package.src_devices_no = bcu_state.bcu_info.devices_no;
-
 		D2D_request_cmd_package.event_type_ann = ANN_IDLE;
 		D2D_request_cmd_package.event_type_intercom = D2D_INTERCOMM_EVENT;
-
 		D2D_request_cmd_package.event_info_intercom.d2d_intercomm.d2d_intercomm_active = 1;
 		D2D_request_cmd_package.event_info_intercom.d2d_intercomm.d2d_intercomm_request_or_over = 0;
 		D2D_request_cmd_package.event_info_intercom.d2d_intercomm.d2d_intercomm_response = 0;
 		D2D_request_cmd_package.event_info_intercom.d2d_intercomm.d2d_intercomm_bcu_device_no = bcu_state.opposite_bcu_no;
 		D2D_request_cmd_package.event_info_intercom.d2d_intercomm.d2d_ppt_state = 1;
-
-		last_control_flag = control_flag;control_flag = 218;
 		UpdataGlobalDeviceInfo(D2D_request_cmd_package);/*Update global device information*/
 		bcu_state.this_bcu_request = 1;
-
+		bcu_state.bcu_requset_ocs_connecting=1;
 		send_infomation_t *tmp=&D2D_request_cmd_package;
 		SendCmd(&tmp,"BCU",2);
 		//StateMachineExchange(&bcu_state.bcu_active_intercom_state,EVENT_PTT_OR_DRIVER_CALL,&D2D_request_cmd_package);
-		last_control_flag = control_flag;control_flag = 219;
-		/*idle->d2d*/
-	//	StateMachineExchange(&bcu_state.bcu_active_intercom_state,EVENT_PTT_OR_DRIVER_CALL,&D2D_request_cmd_package);
-		last_control_flag = control_flag;control_flag = 220;
 	}
-	last_control_flag = control_flag;control_flag = 221;
+
 }
 
 void SendD2DAccordingToCMU()

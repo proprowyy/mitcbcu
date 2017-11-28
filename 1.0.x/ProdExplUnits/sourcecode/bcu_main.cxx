@@ -384,6 +384,7 @@ int main(int argc, char **argv)
 	diag_printf("config:%s\n",bcu_state.pa_software_version.db_version_config);
    LED_Test();
    PPT_Init();
+   bcu_state.bcu_requset_ocs_connecting=0;
    /*global device initialize for zhouwei*/
    InitGlobalArray();
    /*Initialize the bcu_state*/
@@ -760,8 +761,20 @@ void *SystemControl(void *arg)
 		D2DHangUpD2PTimeOutHandle();
 
 		//司机对讲请求与挂断处理
-		D2DReqAndResponseHandle();
 
+
+
+		D2DReqAndResponseHandle();
+		if(bcu_state.bcu_requset_ocs_connecting==1)
+		{
+			static int count;
+			if(count == 3)
+			{
+				count = 0;
+				hal_gpio_pin_toggle( BUTTON_2_LED_PC_ON );
+			}
+			count++;
+		}
 		//RequestBCUKeyInfo();
 
 		KeepComminicationWithPCU();
