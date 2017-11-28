@@ -114,7 +114,7 @@ void StartAudioSampleTimer()
 	}
 	else
 	{
-		SetAudioSampleTimeInterval(SAMPLE_AUDIO_FREQUENCE);
+		SetAudioSampleTimeInterval(10);
 	}
 
 	OpenAudioSampleTimer();
