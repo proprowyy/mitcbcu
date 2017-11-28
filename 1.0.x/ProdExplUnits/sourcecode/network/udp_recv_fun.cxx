@@ -234,7 +234,6 @@ int DataRecvAndHandle2(const int sockfd, int buffer_rw_id,data_package_node_t** 
 								data_package_node_t* ArrayToHandle[])
 {
 	int loop_ye = 0;
-
 	if ((sockfd < 0) || (NULL == pToData) || (NULL == *pToData))
 	{
 		udp_print(("wrong parameter of DataRecvAndHandle\n"));

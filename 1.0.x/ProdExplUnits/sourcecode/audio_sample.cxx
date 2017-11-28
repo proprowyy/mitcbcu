@@ -112,13 +112,14 @@ void StartAudioSampleTimer()
 	{
 		SetAudioSampleTimeInterval(25 - 5);
 	}
-	else
+	else if(bcu_state.bcu_active_intercom_state->state_id == 7)
 	{
 
 		diag_printf("StartAudioSampleTimer-10\n");
 		SetAudioSampleTimeInterval(10);
 
 	}
+	else
 	{
 		SetAudioSampleTimeInterval(SAMPLE_AUDIO_FREQUENCE);
 	}

@@ -102,18 +102,11 @@
 
 #define LOCAL_DEV_NAME "eth0"
 #define NETMASK_ADDRS "255.255.255.0"
-//#define BROADCAST_ADDRS "192.168.7.255"
-//#define GATEWAY_ADDRS "192.168.7.1"
-//#define SERVER_ADDRS "192.168.7.250"
 #define BROADCAST_ADDRS "192.168.10.255"
 #define GATEWAY_ADDRS "192.168.10.1"
 #define SERVER_ADDRS "192.168.10.250"
-
-
 #define SHELL_CMD_NUMBER 10
 #define SHELL_CMD_LONG 32
-
-
 typedef struct
 {
 	int cmd;

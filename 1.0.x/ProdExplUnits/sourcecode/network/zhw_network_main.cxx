@@ -188,9 +188,6 @@ void NetWorkMain(network_buffer_t network_buffer)
 	memset(&udp_heart_socket_addr,0,sizeof(udp_heart_socket_addr));
 	udp_heart_socket_addr = IpAndPortInit(set_ip,UDP_HEART_PORT);
 
-//	memset(&tcp_server_socket_addr, 0, sizeof(tcp_server_socket_addr));
-//	tcp_server_socket_addr = IpAndPortInit(set_ip,TCP_SERVER_PORT);
-
 	udp_cmd_socket = SockfdServerInit(udp_cmd_socket_addr,"SOCK_DGRAM");//创建与eamp的套接字
 	if(udp_cmd_socket<0)
 	{
@@ -347,7 +344,6 @@ void NetWorkMain(network_buffer_t network_buffer)
 		{
 			net_debug_printf(("udp_data_socket of CCU=%d, mul_ip=%s_port=%d, error!\n", udp_data_socket, MUL_IP_CC_DATA, UDP_DATA_PORT));
 		}
-//		net_debug_printf(("CCU Multi is set ok!!!\n"));
 	}
 	else if(strcmp(dev_info_local.dev_name,"CMU")==0)
 	{

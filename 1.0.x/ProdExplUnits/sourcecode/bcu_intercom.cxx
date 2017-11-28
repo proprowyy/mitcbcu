@@ -221,13 +221,8 @@ void D2DIntercomEnter(send_infomation_t *send_information_intercomm_d2d)
 	whether_eant_to_delay_finished_d2d = 0;
 	///<关闭监听扬声器
 	CloseMonitorSpeaker();
-
 	///<强制清除缓存区数据
 	ForceBUfferData_wilson();
-
-	//StartSaveAudioData(whether_save_d2d_audio_data,send_information_intercomm_d2d,"D2D");
-
-//	PthreadPriorityChangeForSchedRr(thread_of_control,20);
 
 	bcu_test_for_ts = 0;
 
@@ -240,44 +235,20 @@ void D2DIntercomEnter(send_infomation_t *send_information_intercomm_d2d)
 		SendCommonCMDToCCUTORecordingAudioData(0,bcu_state.bcu_info.devices_no,bcu_state.opposite_bcu_no,1);
 	}
 
-
-	//OpenSndCard(&bcu_audio_handle,"codec");
-//	cyg_thread_delay(50);
-
 	play_audio = 0;
-	CharBufferClear(bcu_state.pending_buffer_id);
-	CharBufferClear(bcu_state.audio_data_recv_buffer_id);
-//	OpenSoundeDriver();
-
-	MicAdPcmWavheader(bcu_state.audio_data_recv_buffer_id);
-//	MicZeroAfterWaveHeader(bcu_state.audio_data_recv_buffer_id);
 
 	begin_to_broadcast_d2d = 1;
 
 	diag_printf("this bcu info:%s%d\n",bcu_state.bcu_info.devices_name,bcu_state.bcu_info.devices_no);
 	diag_printf("other bcu info:%s%d\n",bcu_state.bcu_info.devices_name,bcu_state.opposite_bcu_no);
-//	SetAudioDataDestination("BCU",bcu_state.opposite_bcu_no);
-	if(0)//(bcu_state.bcu_mcu_state == 1)
-	{
-		SetAudioDataDestination("CMU",230);
-	}
-	else
-	{
-		SetAudioDataDestination("CC",230);
-	}
-
-
+	SetAudioDataDestination("CC",230);
 	StartAudioSampleTimer();///<2013-10-24
 	debug_print(("0108-d2d-enter: timer \n"));
-
 	bcu_state.other_bcu_ptt_state = 0;
 	SendCmd(&send_information_intercomm_d2d,"BCU",bcu_state.opposite_bcu_no);
-
-
 	hal_set_pin_function( CYGHWR_HAL_KINETIS_PIN(F, 25, 1, KINETIS_PIN_PULLUP) );
 	hal_gpio_pin_ddr_out( CYGHWR_HAL_KINETIS_PIN(F, 25, 1, KINETIS_PIN_PULLUP) );
 	hal_gpio_pin_set( CYGHWR_HAL_KINETIS_PIN(F, 25, 1, KINETIS_PIN_PULLUP) );
-
 	BCU_LED_BUTTON2_ON ;///<点亮CC按钮的灯
 	AdjustVolumeAfterCODEC();///<调节BCU的音量
 
@@ -285,6 +256,9 @@ void D2DIntercomEnter(send_infomation_t *send_information_intercomm_d2d)
 	{
 		bcu_state.bcu_mcu_connect_state = 1;
 	}
+	CharBufferClear(bcu_state.pending_buffer_id);
+	CharBufferClear(bcu_state.audio_data_recv_buffer_id);
+	MicAdPcmWavheader(bcu_state.audio_data_recv_buffer_id);
 }
 
 /*The exit of D2D intercom*/
