@@ -228,7 +228,7 @@ int ReadType(void)
 
 int ReadNum(void)
 {
-	int number =2;
+	int number =1;
 	return number;
 }
 #else

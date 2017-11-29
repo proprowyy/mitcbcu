@@ -744,13 +744,8 @@ void *SystemControl(void *arg)
 			PAHandle();
 		}
 
-		if(bcu_state.pcu_is_connecting_without_ts == 0)
-		{
-			//PCHandle();
-		}
 
-	
-		MRHandle();
+
 
 		ANAHandle();
 
@@ -761,9 +756,6 @@ void *SystemControl(void *arg)
 		D2DHangUpD2PTimeOutHandle();
 
 		//司机对讲请求与挂断处理
-
-
-
 		D2DReqAndResponseHandle();
 		if(bcu_state.bcu_requset_ocs_connecting==1)
 		{
@@ -777,7 +769,7 @@ void *SystemControl(void *arg)
 		}
 		//RequestBCUKeyInfo();
 
-		KeepComminicationWithPCU();
+		//KeepComminicationWithPCU();
 
 		//BCU 接收CCU发送过来的TCMS有关CMU的状态
 		if(BlockBufferRead(bcu_state.bcu_recv_tcms_cmu_state_buffer_id,&bcu_recv_tcms_cmu_state,sizeof(bcu_recv_tcms_cmu_state)) > 0)
