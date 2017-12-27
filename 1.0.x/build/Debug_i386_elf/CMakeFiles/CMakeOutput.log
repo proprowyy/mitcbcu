@@ -1,0 +1,233 @@
+The system is: Linux - 2.6.32-5-686 - i686
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc
+Build flags: ;-m32;-Wall;-I$(ECOS_LIBRARY_PATH)/include;-nostdlib;-Wall;-Wpointer-arith;-Wstrict-prototypes;-Wundef;-Woverloaded-virtual;-Wno-write-strings;-g;-O2;-ffunction-sections;-fdata-sections;-fno-rtti;-fno-exceptions;-pipe;-Wl,--gc-sections;-Wl,-static;-Wall;-Wpointer-arith;-Wstrict-prototypes;-Wundef;-Wno-write-strings;-ffunction-sections;-fdata-sections;-fno-exceptions;-DDEBUG
+Id flags: 
+
+The output was:
+0
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc
+Build flags: ;-m32;-Wall;-I$(ECOS_LIBRARY_PATH)/include;-nostdlib;-Wall;-Wpointer-arith;-Wstrict-prototypes;-Wundef;-Woverloaded-virtual;-Wno-write-strings;-g;-O2;-ffunction-sections;-fdata-sections;-fno-rtti;-fno-exceptions;-pipe;-Wl,--gc-sections;-Wl,-static;-Wall;-Wpointer-arith;-Wstrict-prototypes;-Wundef;-Wno-write-strings;-ffunction-sections;-fdata-sections;-fno-exceptions;-DDEBUG
+Id flags: -c
+
+The output was:
+0
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++
+Build flags: -m32;-Wall;-I$(ECOS_LIBRARY_PATH)/include;-g;-nostdlib;-Wl,--gc-sections;-Wl,-static;-Wall;-Wpointer-arith;;-Wundef;-Woverloaded-virtual;-Wno-write-strings;-g;-O2;-ffunction-sections;-fdata-sections;-fno-rtti;-fno-exceptions;-DDEBUG
+Id flags: 
+
+The output was:
+0
+/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++
+Build flags: -m32;-Wall;-I$(ECOS_LIBRARY_PATH)/include;-g;-nostdlib;-Wl,--gc-sections;-Wl,-static;-Wall;-Wpointer-arith;;-Wundef;-Woverloaded-virtual;-Wno-write-strings;-g;-O2;-ffunction-sections;-fdata-sections;-fno-rtti;-fno-exceptions;-DDEBUG
+Id flags: -c
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc  -m32 -Wall -I/include -nostdlib -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -pipe -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Wno-write-strings -ffunction-sections -fdata-sections -fno-exceptions -DDEBUG     -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/testCCompiler.c
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+Linking C executable cmTryCompileExec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc   -m32 -Wall -I$(ECOS_LIBRARY_PATH)/include -nostdlib -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -pipe -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Wno-write-strings -ffunction-sections -fdata-sections -fno-exceptions -DDEBUG      CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
+i386-elf-gcc: unrecognized option '-rdynamic'
+/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
+make[1]: Leaving directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc  -m32 -Wall -I/include -nostdlib -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -pipe -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Wno-write-strings -ffunction-sections -fdata-sections -fno-exceptions -DDEBUG     -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C
+cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C
+Linking C executable cmTryCompileExec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc   -m32 -Wall -I$(ECOS_LIBRARY_PATH)/include -nostdlib -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -pipe -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Wno-write-strings -ffunction-sections -fdata-sections -fno-exceptions -DDEBUG    -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+i386-elf-gcc: unrecognized option '-rdynamic'
+Target: i386-elf
+Configured with: /home/test/src/toolchains/gcc/gcc-4.3.2/configure -v --target=i386-elf --prefix=/home/test/build/toolchains/i386-elf/tools --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-__cxa_atexit --enable-threads --with-bugurl=http://bugs.ecos.sourceware.org/ --with-pkgversion='eCosCentric GNU tools 4.3.2-sw' --with-gmp=/opt/gmp-4.2.2 --with-mpfr=/opt/mpfr-2.3.0
+Thread model: single
+gcc version 4.3.2 (eCosCentric GNU tools 4.3.2-sw) 
+COMPILER_PATH=/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/
+LIBRARY_PATH=/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib/
+COLLECT_GCC_OPTIONS='-m32' '-I$(ECOS_LIBRARY_PATH)/include' '-nostdlib' '-Woverloaded-virtual' '-g' '-O2' '-fno-rtti' '-pipe' '-Wall' '-Wpointer-arith' '-Wstrict-prototypes' '-Wundef' '-Wno-write-strings' '-ffunction-sections' '-fdata-sections' '-fno-exceptions' '-DDEBUG' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=i386'
+ /opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/collect2 -o cmTryCompileExec -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2 -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib --gc-sections -static CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
+make[1]: Leaving directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [make[1]: Entering directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc  -m32 -Wall -I/include -nostdlib -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -pipe -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Wno-write-strings -ffunction-sections -fdata-sections -fno-exceptions -DDEBUG     -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C]
+  ignore line: [cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C]
+  ignore line: [cc1: warning: command line option "-Woverloaded-virtual" is valid for C++/ObjC++ but not for C]
+  ignore line: [cc1: warning: command line option "-fno-rtti" is valid for C++/ObjC++ but not for C]
+  ignore line: [Linking C executable cmTryCompileExec]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-gcc   -m32 -Wall -I$(ECOS_LIBRARY_PATH)/include -nostdlib -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -pipe -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith -Wstrict-prototypes -Wundef -Wno-write-strings -ffunction-sections -fdata-sections -fno-exceptions -DDEBUG    -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [i386-elf-gcc: unrecognized option '-rdynamic']
+  ignore line: [Target: i386-elf]
+  ignore line: [Configured with: /home/test/src/toolchains/gcc/gcc-4.3.2/configure -v --target=i386-elf --prefix=/home/test/build/toolchains/i386-elf/tools --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-__cxa_atexit --enable-threads --with-bugurl=http://bugs.ecos.sourceware.org/ --with-pkgversion='eCosCentric GNU tools 4.3.2-sw' --with-gmp=/opt/gmp-4.2.2 --with-mpfr=/opt/mpfr-2.3.0]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.3.2 (eCosCentric GNU tools 4.3.2-sw) ]
+  ignore line: [COMPILER_PATH=/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/]
+  ignore line: [LIBRARY_PATH=/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-m32' '-I$(ECOS_LIBRARY_PATH)/include' '-nostdlib' '-Woverloaded-virtual' '-g' '-O2' '-fno-rtti' '-pipe' '-Wall' '-Wpointer-arith' '-Wstrict-prototypes' '-Wundef' '-Wno-write-strings' '-ffunction-sections' '-fdata-sections' '-fno-exceptions' '-DDEBUG' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=i386']
+  link line: [ /opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/collect2 -o cmTryCompileExec -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2 -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib --gc-sections -static CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
+    arg [/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/collect2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [-L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2] ==> dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2]
+    arg [-L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc] ==> dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc]
+    arg [-L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib] ==> dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib]
+    arg [--gc-sections] ==> ignore
+    arg [-static] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+  collapse dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2] ==> [/opt/ecos/gnutools/i386-elf/lib/gcc/i386-elf/4.3.2]
+  collapse dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc] ==> [/opt/ecos/gnutools/i386-elf/lib/gcc]
+  collapse dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib] ==> [/opt/ecos/gnutools/i386-elf/i386-elf/lib]
+  implicit libs: []
+  implicit dirs: [/opt/ecos/gnutools/i386-elf/lib/gcc/i386-elf/4.3.2;/opt/ecos/gnutools/i386-elf/lib/gcc;/opt/ecos/gnutools/i386-elf/i386-elf/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++   -m32 -Wall -I/include -g -nostdlib -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith  -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -DDEBUG     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++   -m32 -Wall -I$(ECOS_LIBRARY_PATH)/include -g -nostdlib -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith  -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -DDEBUG      CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
+i386-elf-g++: unrecognized option '-rdynamic'
+/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
+make[1]: Leaving directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++   -m32 -Wall -I/include -g -nostdlib -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith  -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -DDEBUG     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++   -m32 -Wall -I$(ECOS_LIBRARY_PATH)/include -g -nostdlib -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith  -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -DDEBUG    -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+i386-elf-g++: unrecognized option '-rdynamic'
+Target: i386-elf
+Configured with: /home/test/src/toolchains/gcc/gcc-4.3.2/configure -v --target=i386-elf --prefix=/home/test/build/toolchains/i386-elf/tools --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-__cxa_atexit --enable-threads --with-bugurl=http://bugs.ecos.sourceware.org/ --with-pkgversion='eCosCentric GNU tools 4.3.2-sw' --with-gmp=/opt/gmp-4.2.2 --with-mpfr=/opt/mpfr-2.3.0
+Thread model: single
+gcc version 4.3.2 (eCosCentric GNU tools 4.3.2-sw) 
+COMPILER_PATH=/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/
+LIBRARY_PATH=/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib/
+COLLECT_GCC_OPTIONS='-m32' '-I$(ECOS_LIBRARY_PATH)/include' '-g' '-nostdlib' '-Wall' '-Wpointer-arith' '-Wundef' '-Woverloaded-virtual' '-Wno-write-strings' '-g' '-O2' '-ffunction-sections' '-fdata-sections' '-fno-rtti' '-fno-exceptions' '-DDEBUG' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=i386'
+ /opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/collect2 -o cmTryCompileExec -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2 -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib --gc-sections -static CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
+make[1]: Leaving directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [make[1]: Entering directory `/home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /home/benty/workspace/Projects/ProdExpl/1.0.x/build/Debug_i386_elf/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++   -m32 -Wall -I/include -g -nostdlib -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith  -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -DDEBUG     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/ccache /opt/ecos/gnutools/i386-elf/bin/i386-elf-g++   -m32 -Wall -I$(ECOS_LIBRARY_PATH)/include -g -nostdlib -Wl,--gc-sections -Wl,-static -Wall -Wpointer-arith  -Wundef -Woverloaded-virtual -Wno-write-strings -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -DDEBUG    -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [i386-elf-g++: unrecognized option '-rdynamic']
+  ignore line: [Target: i386-elf]
+  ignore line: [Configured with: /home/test/src/toolchains/gcc/gcc-4.3.2/configure -v --target=i386-elf --prefix=/home/test/build/toolchains/i386-elf/tools --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-__cxa_atexit --enable-threads --with-bugurl=http://bugs.ecos.sourceware.org/ --with-pkgversion='eCosCentric GNU tools 4.3.2-sw' --with-gmp=/opt/gmp-4.2.2 --with-mpfr=/opt/mpfr-2.3.0]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.3.2 (eCosCentric GNU tools 4.3.2-sw) ]
+  ignore line: [COMPILER_PATH=/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/bin/]
+  ignore line: [LIBRARY_PATH=/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/:/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-m32' '-I$(ECOS_LIBRARY_PATH)/include' '-g' '-nostdlib' '-Wall' '-Wpointer-arith' '-Wundef' '-Woverloaded-virtual' '-Wno-write-strings' '-g' '-O2' '-ffunction-sections' '-fdata-sections' '-fno-rtti' '-fno-exceptions' '-DDEBUG' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=i386']
+  link line: [ /opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/collect2 -o cmTryCompileExec -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2 -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc -L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib --gc-sections -static CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
+    arg [/opt/ecos/gnutools/i386-elf/bin/../libexec/gcc/i386-elf/4.3.2/collect2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [-L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2] ==> dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2]
+    arg [-L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc] ==> dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc]
+    arg [-L/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib] ==> dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib]
+    arg [--gc-sections] ==> ignore
+    arg [-static] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+  collapse dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2] ==> [/opt/ecos/gnutools/i386-elf/lib/gcc/i386-elf/4.3.2]
+  collapse dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc] ==> [/opt/ecos/gnutools/i386-elf/lib/gcc]
+  collapse dir [/opt/ecos/gnutools/i386-elf/bin/../lib/gcc/i386-elf/4.3.2/../../../../i386-elf/lib] ==> [/opt/ecos/gnutools/i386-elf/i386-elf/lib]
+  implicit libs: []
+  implicit dirs: [/opt/ecos/gnutools/i386-elf/lib/gcc/i386-elf/4.3.2;/opt/ecos/gnutools/i386-elf/lib/gcc;/opt/ecos/gnutools/i386-elf/i386-elf/lib]
+
+
