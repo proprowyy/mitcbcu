@@ -27,9 +27,29 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/benty/workspace/Projects/ProdCCU/1.0.x/build/Debug_CCU/ProdExplUnits/source/cmake_install.cmake")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/benty/workspace/Projects/ProdCCU/1.0.x/build/Debug_CCU/ProdExplUnits/ProdTest.elf")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./ProdTest.elf" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./ProdTest.elf")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/opt/ecos/gnutools/arm-eabi/bin/arm-eabi-strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./ProdTest.elf")
+    endif()
+  endif()
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  
+	EXECUTE_PROCESS(COMMAND rm  ProdTest_CCU.srec ProdTest_CCU.bin  ProdTest_CCU.img ProdTest_CCU.elf WORKING_DIRECTORY /srv/tftpboot/ccu//)	
+#	EXECUTE_PROCESS(COMMAND rm ProdTest_CCU.srec ProdTest_CCU.bin  ProdTest_CCU.img ProdTest_CCU.elf   WORKING_DIRECTORY  /home/benty/workspace/Products/CCU/)	
+
+	
+	EXECUTE_PROCESS(COMMAND /opt/ecos/gnutools/arm-eabi/bin/arm-eabi-objcopy -O  binary ProdTest.elf ProdTest_CCU.bin WORKING_DIRECTORY /srv/tftpboot/ccu//)
+	EXECUTE_PROCESS(COMMAND /opt/ecos/gnutools/arm-eabi/bin/arm-eabi-objcopy -O srec ProdTest.elf ProdTest_CCU.srec WORKING_DIRECTORY /srv/tftpboot/ccu//)
+	EXECUTE_PROCESS(COMMAND cp	ProdTest.elf ./ProdTest_CCU.elf WORKING_DIRECTORY /srv/tftpboot/ccu//)
+#	EXECUTE_PROCESS(COMMAND	dd if=/dev/zero of=ProdTest_CCU.img bs=512 count=2880 WORKING_DIRECTORY /srv/tftpboot/ccu//)
+#	EXECUTE_PROCESS(COMMAND dd if=ProdTest_CCU.bin of=ProdTest_CCU.img bs=512 conv=notrunc WORKING_DIRECTORY /srv/tftpboot/ccu//)
+	EXECUTE_PROCESS(COMMAND cp  ProdTest_CCU.srec ProdTest_CCU.bin  ProdTest_CCU.img ProdTest_CCU.elf /srv/tftpboot/cbcu/   WORKING_DIRECTORY /srv/tftpboot/ccu//)
+#	EXECUTE_PROCESS(COMMAND rm ProdTest.elf WORKING_DIRECTORY /srv/tftpboot/ccu//)	
 
 endif()
 

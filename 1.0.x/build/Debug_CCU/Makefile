@@ -153,7 +153,7 @@ ProdTest: cmake_check_build_system
 
 # fast build rule for target.
 ProdTest/fast:
-	$(MAKE) -f ProdExplUnits/source/CMakeFiles/ProdTest.dir/build.make ProdExplUnits/source/CMakeFiles/ProdTest.dir/build
+	$(MAKE) -f ProdExplUnits/CMakeFiles/ProdTest.dir/build.make ProdExplUnits/CMakeFiles/ProdTest.dir/build
 .PHONY : ProdTest/fast
 
 # Help Target
